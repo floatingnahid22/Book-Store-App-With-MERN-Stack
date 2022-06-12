@@ -1,19 +1,17 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "<p>I created a basic application with the MERN stack, a bookstore application with CRUD functionality.<p>",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/floatingnahid22/Book-Store-App-With-MERN-Stack.git"
-  },
-  "author": "nahid",
+  "author": "Nahid",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/floatingnahid22/Book-Store-App-With-MERN-Stack/issues"
-  },
-  "homepage": "https://github.com/floatingnahid22/Book-Store-App-With-MERN-Stack#readme"
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.6",
+    "nodemon": "^2.0.16"
+  }
 }
