@@ -31,3 +31,32 @@
 ```sh
     npx create-react-app .
 ```
+
+<p><b>Dependencies:</b></p>
+
+```sh
+    npm install @mui/material @emotion/react @emotion/styled
+```
+
+```sh
+npm install @mui/icons-material
+```
+
+```sh
+npm install react-router-dom@6
+```
+
+```sh
+npm i axios
+
+```
+
+```sh
+npm i cors
+```
+
+<p><b>Then start the server:</b></p>
+
+```sh
+npm start
+```
