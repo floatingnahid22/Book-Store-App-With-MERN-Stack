@@ -7,8 +7,9 @@ const getAllBooks = async (req, res, next) => {
   } catch (err) {
     console.log(err);
   }
+
   if (!books) {
-    return res.status(404).json({ message: "no products found" });
+    return res.status(404).json({ message: "No products found" });
   }
   return res.status(200).json({ books });
 };
@@ -22,9 +23,9 @@ const getById = async (req, res, next) => {
     console.log(err);
   }
   if (!book) {
-    return res.status(500).json({ message: "no book found" });
+    return res.status(404).json({ message: "No Book found" });
   }
-  return res.status(201).json({ book });
+  return res.status(200).json({ book });
 };
 
 const addBook = async (req, res, next) => {
@@ -45,7 +46,7 @@ const addBook = async (req, res, next) => {
   }
 
   if (!book) {
-    return res.status(500).json({ message: "unable to add" });
+    return res.status(500).json({ message: "Unable To Add" });
   }
   return res.status(201).json({ book });
 };
@@ -68,7 +69,7 @@ const updateBook = async (req, res, next) => {
     console.log(err);
   }
   if (!book) {
-    return res.status(500).json({ message: "unable to update by this id" });
+    return res.status(404).json({ message: "Unable To Update By this ID" });
   }
   return res.status(200).json({ book });
 };
@@ -82,9 +83,9 @@ const deleteBook = async (req, res, next) => {
     console.log(err);
   }
   if (!book) {
-    return res.status(500).json({ message: "unable to delete by this id" });
+    return res.status(404).json({ message: "Unable To Delete By this ID" });
   }
-  return res.status(200).json({ book });
+  return res.status(200).json({ message: "Product Successfully Deleted" });
 };
 
 exports.getAllBooks = getAllBooks;
