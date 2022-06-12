@@ -1,7 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const router = require("./routes/book-routes");
 
 const app = express();
+
+//middlewares
+app.use(express.json());
+app.use("/books", router); //localhost:5000/books
 
 mongoose
   .connect(
