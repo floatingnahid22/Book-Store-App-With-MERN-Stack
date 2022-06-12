@@ -39,24 +39,24 @@
 ```
 
 ```sh
-npm install @mui/icons-material
+    npm install @mui/icons-material
 ```
 
 ```sh
-npm install react-router-dom@6
+    npm install react-router-dom@6
 ```
 
 ```sh
-npm i axios
+    npm i axios
 
 ```
 
 ```sh
-npm i cors
+    npm i cors
 ```
 
 <p><b>Then start the server:</b></p>
 
 ```sh
-npm start
+    npm start
 ```
