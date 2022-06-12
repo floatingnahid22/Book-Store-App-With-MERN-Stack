@@ -2,6 +2,8 @@
 
 <p>I created a basic application with the MERN stack, a bookstore application with CRUD functionality.<p>
 
+![Book-Store](E:\Photo\Others/Capture.PNG)
+
 <p><b>For formatting your code, follow all the command inside in this links:</b></p>
 
 ```sh
